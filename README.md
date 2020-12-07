@@ -14,3 +14,10 @@ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- menuconfig
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- LOADADDR=0x80000000 uImage dtbs
 
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- modules
+
+
+Issues: 
+1. /bin/sh: lzop: command not found
+	Solution: sudo apt-get install lzop
+2. Problem: "mkimage" command not found - U-Boot images will not be built
+	Solution: sudo apt-get install uboot-mkimage
